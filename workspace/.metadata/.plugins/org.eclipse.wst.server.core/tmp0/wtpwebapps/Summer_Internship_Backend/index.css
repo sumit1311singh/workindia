@@ -1,0 +1,195 @@
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.og-ck-box {
+    display: none;
+}
+
+.moveabc {
+    top: 14px;
+    left: 21px;
+    position: absolute;
+    opacity: 1;
+}
+
+.ilist {
+    top: 10x;
+    left: 25px;
+    position: absolute;
+    opacity: 1;
+}
+
+.movehigh {
+    top: 18.1px;
+    left: 567px;
+    position: absolute;
+    opacity: 1;
+}
+
+.backtwo {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    width: 1320px;
+    height: 510px;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#add_button {
+    display: flex;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 1px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#edit_button {
+    display: flex;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 1px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#del_button {
+    display: flex;
+    width: 90px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.search_box {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 25px;
+    margin: 10px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 1px;
+}
+
+.search_icon {
+    margin: 7px;
+}
+
+.inside_buttons_add {
+    margin: 3px;
+    display: flex;
+    font-size: 20px;
+    font: normal normal normal 15px/20px Ubuntu;
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.inside_buttons_del {
+    margin: 0px;
+    display: flex;
+    font-size: 20px;
+    font: normal normal normal 15px/20px Ubuntu;
+    color: #97A1A9;
+    padding: 0px;
+}
+
+.inside_buttons_edit {
+    margin: 3px;
+    display: flex;
+    font-size: 20px;
+    font: normal normal normal 15px/20px Ubuntu;
+    color: #97A1A9;
+    padding: 0px;
+}
+
+.search_input {
+    width: 180px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    font: normal normal normal 15px/20px Ubuntu;
+    border: none;
+    outline: none;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 1px;
+    color: white;
+}
+
+th {
+    color: #97A1A9;
+    font: normal normal normal 15px/20px Ubuntu;
+    padding: 3px;
+    margin-left: 100px;
+}
+
+td {
+    color: #FFFFFF;
+    font: normal normal normal 18px/22px Ubuntu;
+    padding: 3px;
+}
+
+.table_content {
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+}
+
+.give_space {
+    margin-left: 0px;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background: #283a46 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+tr:first-child {
+    background: transparent;
+}
+
+.chev-left {
+    background: #14AFF1 0% 0% no-repeat padding-box;
+    position: fixed;
+    top: 55%;
+    left: 0%;
+}
+
+.chev-right {
+    background: #14AFF1 0% 0% no-repeat padding-box;
+    position: fixed;
+    top: 55%;
+    right: 0%;
+}

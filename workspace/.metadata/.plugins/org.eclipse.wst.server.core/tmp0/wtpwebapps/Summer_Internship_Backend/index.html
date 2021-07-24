@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="index.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>TODO</title>
+    <script src="addData.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="index.css" rel="stylesheet">
+    <link href="modal.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+</head>
+
+<body>
+    <div class="background">
+        <div class="ilist">
+            <br><br><br><br>
+            <p style="font-size:20px; color: #FFFFFF;"> TODO List </p>
+        </div>
+        <div id="addModal" class="modal">
+            <div class="modal_content">
+                <div class="modal_header">
+                    <img src="images\baseline-close-24px.svg" class="close">
+                    <div> Add todo </div>
+                </div>
+                <div class="modal_body">
+                    <div class="left_column">
+                        <div class="entry">
+                            Title
+                            <input class="add_input" id="add_title" type="text">
+                        </div>
+                        <div class="entry">
+                            Description
+                            <input class="add_input" id="add_des" type="text">
+                        </div>
+                        <div class="entry">
+                            Cateogry
+                            <input class="add_input" id="add_cate" type="text">
+                        </div>
+                    </div>
+                    <div class="right_column">
+                        <div class="entry" id="date_input">
+                            Due Date
+                            <input class="add_input" type="date" id="halwa">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <a class="cancel" style="color:  #14AFF1; text-decoration: none;">Cancel</a>
+                    <div class="footer_end">
+                        <button id="clear_btn" onclick="clearAll()">
+                            <p class="buttons_clear"> Clear </p>
+                        </button>
+                        <button id="add_btn" onclick="add_in_db()">
+                            <p class="buttons_add"> Add </p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backtwo">
+            <div class="flex-container">
+                <button id="add_button" onclick="modal_add('add', 0)">
+                    <img src="images\Path 18189.svg" class="search_icon" width="12px">
+                    <p class="inside_buttons_add"> Add </p>
+                </button>
+            </div>
+            <div class="table_content">
+                <table style="width:100%" id="table_id">
+                    <tr>
+                        <th><img src="images\check_box_outline_blank-black-18dp.svg" class="give_space"></th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Cateogry</th>
+                        <th>Due Date</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="fetch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,613 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal_header {
+    text-align: left;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modal_body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0.19px;
+    color: #97A1A9;
+}
+
+.modal_footer {
+    top: 451px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left_column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.right_column {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.modal_content {
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    width: 1000px;
+    height: 350px;
+    animation: fadeIn ease 0.75s;
+    -webkit-animation: fadeIn ease 0.75s;
+    -moz-animation: fadeIn ease 0.75s;
+    -o-animation: fadeIn ease 0.75s;
+    -ms-animation: fadeIn ease 0.75s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add_input {
+    display: flex;
+    height: 40px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0.19px;
+    color: #FFFFFF;
+    outline: none;
+    align-content: flex-end;
+}
+
+.add_input_edit {
+    display: flex;
+    height: 40px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0.19px;
+    color: #FFFFFF;
+    outline: none;
+    align-content: flex-end;
+}
+
+.entry {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    align-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+#notes_field {
+    margin-right: px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+#halwa {
+    width: 55%;
+}
+
+#add_btn {
+    display: flex;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 1px;
+    cursor: pointer;
+    background: #14AFF1 0% 0% no-repeat padding-box;
+}
+
+.buttons_add {
+    margin: 3px;
+    margin-left: 20px;
+    display: flex;
+    font-size: 20px;
+    font: normal normal normal 15px/20px Ubuntu;
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+#clear_btn {
+    display: flex;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #97A1A9;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 1px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.buttons_clear {
+    margin: 3px;
+    margin-left: 15px;
+    display: flex;
+    font-size: 20px;
+    font: normal normal normal 15px/20px Ubuntu;
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.footer_end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.notes_entry {
+    margin-right: 45px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    resize: none;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    width: 250px;
+    align-items: center;
+    color: white;
+}
+
+.cancel {
+    padding: 10px;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0px;
+    color: #14AFF1;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modalEdit {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-header-edit {
+    text-align: left;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modal-body-edit {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0.19px;
+    color: #97A1A9;
+}
+
+.modal-footer-edit {
+    display: flex;
+    flex-direction: row;
+    top: 451px;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.column-edit {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.modal-content-edit {
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    width: 543px;
+    height: 350px;
+    animation: fadeIn ease 0.75s;
+    -webkit-animation: fadeIn ease 0.75s;
+    -moz-animation: fadeIn ease 0.75s;
+    -o-animation: fadeIn ease 0.75s;
+    -ms-animation: fadeIn ease 0.75s;
+}
+
+.modalDel {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal-header-del {
+    text-align: left;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modal-body-del {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0.19px;
+    color: #97A1A9;
+}
+
+.modal-footer-del {
+    display: flex;
+    flex-direction: row;
+    top: 451px;
+    padding-top: 10px;
+    justify-content: flex-end;
+}
+
+.column-del {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.del_delete {
+    margin: auto;
+    display: flex;
+    font-size: 20px;
+    font: normal normal normal 15px/20px Ubuntu;
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.del_cancel {
+    margin: auto;
+    display: flex;
+    font-size: 20px;
+    font: normal normal normal 15px/20px Ubuntu;
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.del_text {
+    text-align: left;
+}
+
+.modal-content-del {
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    width: 450px;
+    height: 200px;
+    animation: fadeIn ease 0.75s;
+    -webkit-animation: fadeIn ease 0.75s;
+    -moz-animation: fadeIn ease 0.75s;
+    -o-animation: fadeIn ease 0.75s;
+    -ms-animation: fadeIn ease 0.75s;
+}
+
+strong {
+    color: #FF5E5E;
+}
+
+input[type="date"]:in-range::-webkit-datetime-edit-year-field,
+input[type="date"]:in-range::-webkit-datetime-edit-month-field,
+input[type="date"]:in-range::-webkit-datetime-edit-day-field,
+input[type="date"]:in-range::-webkit-datetime-edit-text {
+    color: transparent;
+}
+
+#add-modal-snack-bar {
+    position: relative;
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #2A3E4C;
+    color: #fff;
+    /* White text color */
+    text-align: left;
+    /* Centered text */
+    border-radius: 5px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 10;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 5px solid rgb(189, 24, 24);
+    font: normal normal normal 14px/16px Ubuntu;
+}
+
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+#add-modal-snack-bar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+#add-modal-snack-bar {
+    position: relative;
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #2A3E4C;
+    color: #fff;
+    /* White text color */
+    text-align: left;
+    /* Centered text */
+    border-radius: 5px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 10;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 5px solid rgb(189, 24, 24);
+    font: normal normal normal 14px/16px Ubuntu;
+}
+
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+#add-modal-snack-bar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
